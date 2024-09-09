@@ -1,3 +1,22 @@
+Assembly Code for Byte Extraction and Shifting
+This assembly program performs byte-by-byte extraction from a 32-bit word stored in memory and shifts each byte left by a dynamic amount before adding it to an accumulator. The final result is stored back in memory.
+
+Key Operations:
+
+Loads a 32-bit word (0x12345678) into register x11
+Extracts bytes using ANDI and shifts them left by a varying amount
+Adds the shifted bytes to an accumulator (x17)
+Loops through all 4 bytes
+Stores the result back into memory after processing
+
+
+
+
+
+
+
+
+
 .data 
 a: .word 0x12345678
 .text
